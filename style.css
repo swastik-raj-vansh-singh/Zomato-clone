@@ -5,57 +5,238 @@
 
 body{
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
-.navbar{
-  display: flex;
-  background-color: #fff;
-  align-items: center;
-  justify-content: space-around;
+/* stlying the navbar till line 63 */
+
+        .navbar{
+        display: flex;
+        background-color: #ffffff;
+        align-items: center;
+        justify-content: space-around;
+        }
+
+        .navbar__brand{
+            width: 100px;
+        
+        }
+        .navbar__logo{
+            width: 100%;
+        }
+
+        .button__primary{
+            background-image: linear-gradient(
+                to right,
+                #ff512f 0%,
+                #dd2476 51%,
+                #ff512f 100%
+            );
+
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .button__primary:hover{
+            border: 2px solid #ff6767;
+            cursor: pointer;
+        }
+
+        
+
+/* navbar styled */
+
+/* ----------------------------------------------------------------------------------------------------------------------- */
+
+/* hero section */
+
+.container{
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
 }
 
-.navbar__brand{
-    width: 100px;
- 
+.hero__image__container{
+    width: 100%;
+    position: relative;
+    top: 0;
 }
-.navbar_logo{
+
+.hero__text{
+    font-size: 30px;
+    margin: 20px 0;
+    color: #1d3557;
+    font-weight: 800;
+}
+
+.hero__image{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 50%);
+}
+
+
+.hero__background__image1{
+    position: absolute;
+    top: 103px;
+    left: 39px;
+    right: 10px;
+}
+
+.hero__background__image2{
+    position: absolute;
+    top: 67px; 
+}
+
+.hero__discription{
+    margin-top: 72px
+}
+
+
+/* hero section styled */
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+
+.explore__menu__text{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #1d3557;
+    font-weight: 800;
+}
+.food__card{
+    background-color: #f9f9f9;
+}
+
+.food__card__image__container{
     width: 100%;
 }
 
-.nav_item{
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    );
-
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
+.food__image{
+    width: 100%;
+ 
 }
 
-.nav_item:hover{
-    border: 2px solid #ff6767;
-    cursor: pointer;
+.food__card__description{
+    padding: 15px;
 }
 
 @media(min-width:768px){
+
+    .explore__menu__list{
+        display: flex;
+        gap: 10px;
+        margin-top: 45px;
+        padding: 0 20px;
+    }
+
+    .explore__menu__text {
+        margin-top: 150px;
+    }
+
+    #pizza__card{
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
+
+    .explore__menu__container{
+        position: relative;
+        height: 530px;
+    }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        );
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
     .navbar{
         justify-content: space-between;
         padding: 10px 30px;
     }
+   
+    .hero__section{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    
+    .hero__background__image1{
+        position: absolute;
+        width: 400px;
+        left: 407px;
+    }
+
+    .hero__background__image2{
+        position: absolute;
+        top: 92px;
+        right: 250px;
+        height: 421px;
+        left: 410px;
+    }
+   
 }
 
 @media (min-width:1024px) {
+    .container{
+        max-width: 70%;
+    }
+
+    .explore__menu__list{
+        gap: 25px;
+    }
+    .explore__menu__text{
+        font-size: 48px;
+    }
+    .explore__menu__container{
+
+        height: 650px;
+    }
     .navbar__brand{
         width: 150px;
     }
-    .nav_item{
+
+    .button__primary{
         font-size: 20px;
         padding: 15px;
-        font-weight: 600px;
+        /* font-weight: 600px; */
     }
+
+    .hero__discription{
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .hero__text{
+        font-size: 45px;
+        
+    }
+    .hero__background__image1{
+        position: absolute;
+        width: 406px;
+        left: 843px;
+        top: 239px;
+    }
+
+    .hero__background__image2{
+        position: absolute;
+        top: 190px;
+        height: 445px;
+        left: 825px;
+
 }
+}
+
